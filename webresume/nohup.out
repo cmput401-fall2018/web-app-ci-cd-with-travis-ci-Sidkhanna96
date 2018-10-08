@@ -1,0 +1,258 @@
+[06/Oct/2018 03:55:16] "GET / HTTP/1.1" 200 1137
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2018 - 03:39:06
+Django version 2.1.2, using settings 'webresume.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Not Found: /helloworld.txt
+[06/Oct/2018 04:08:37] "GET /helloworld.txt HTTP/1.1" 404 2559
+[06/Oct/2018 04:08:45] "GET /hello-world.txt HTTP/1.1" 200 11
+Not Found: /image.jpeg
+[06/Oct/2018 04:09:00] "GET /image.jpeg HTTP/1.1" 404 2547
+[06/Oct/2018 04:09:19] "GET /image.jpg HTTP/1.1" 200 11
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2018 - 04:07:43
+Django version 2.1.2, using settings 'webresume.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[06/Oct/2018 04:16:47] "GET /image.jpg HTTP/1.1" 200 11
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2018 - 04:16:36
+Django version 2.1.2, using settings 'webresume.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[06/Oct/2018 04:20:34] "GET /image.jpg HTTP/1.1" 200 44969
+[06/Oct/2018 05:11:05] "GET / HTTP/1.1" 200 1137
+[06/Oct/2018 05:11:11] "GET /image.jpg HTTP/1.1" 200 44969
+[06/Oct/2018 05:19:01] "GET / HTTP/1.1" 200 1137
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2018 - 04:20:29
+Django version 2.1.2, using settings 'webresume.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f04629db8c8>
+Traceback (most recent call last):
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/apps/registry.py", line 120, in populate
+    app_config.ready()
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/contrib/admin/apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ubuntu/web-app-ci-cd-with-travis-ci-Sidkhanna96/webresume/api/admin.py", line 4, in <module>
+    from django.models import Person
+ImportError: No module named 'django.models'
+[06/Oct/2018 05:26:04] "GET / HTTP/1.1" 200 1236
+[06/Oct/2018 05:28:43] "GET / HTTP/1.1" 200 1242
+Not Found: /api/person/1/
+[06/Oct/2018 05:28:44] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 05:37:09] "GET / HTTP/1.1" 200 1304
+Not Found: /api/person/1/
+[06/Oct/2018 05:37:11] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 05:45:54] "GET / HTTP/1.1" 200 1295
+Not Found: /style.css
+[06/Oct/2018 05:45:55] "GET /style.css HTTP/1.1" 404 2544
+Not Found: /api/person/1/
+[06/Oct/2018 05:45:56] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 05:47:52] "GET / HTTP/1.1" 200 1295
+Not Found: /style.css
+[06/Oct/2018 05:47:52] "GET /style.css HTTP/1.1" 404 2544
+Not Found: /api/person/1/
+[06/Oct/2018 05:47:54] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 05:51:28] "GET / HTTP/1.1" 200 1295
+Not Found: /style.css
+[06/Oct/2018 05:51:28] "GET /style.css HTTP/1.1" 404 2544
+Not Found: /api/person/1/
+[06/Oct/2018 05:51:30] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 05:52:11] "GET / HTTP/1.1" 200 1295
+Not Found: /style.css
+[06/Oct/2018 05:52:12] "GET /style.css HTTP/1.1" 404 2544
+Not Found: /api/person/1/
+[06/Oct/2018 05:52:13] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 05:52:43] "GET / HTTP/1.1" 200 1295
+Not Found: /style.css
+[06/Oct/2018 05:52:44] "GET /style.css HTTP/1.1" 404 2544
+Not Found: /api/person/1/
+[06/Oct/2018 05:52:45] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 06:04:25] "GET / HTTP/1.1" 200 1307
+[06/Oct/2018 06:04:25] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 06:04:26] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 06:06:12] "GET / HTTP/1.1" 200 1307
+[06/Oct/2018 06:06:12] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 06:06:14] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 06:06:41] "GET / HTTP/1.1" 200 1307
+[06/Oct/2018 06:06:41] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 06:06:42] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 06:08:34] "GET / HTTP/1.1" 200 1307
+[06/Oct/2018 06:08:34] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 06:08:35] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 06:10:55] "GET / HTTP/1.1" 200 1308
+[06/Oct/2018 06:10:55] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 06:10:56] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 06:18:53] "GET / HTTP/1.1" 200 1308
+[06/Oct/2018 06:18:53] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 06:18:54] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 09:57:29] "GET / HTTP/1.1" 200 1308
+[06/Oct/2018 16:57:37] "GET / HTTP/1.1" 200 1308
+[06/Oct/2018 16:57:37] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 16:57:38] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 16:57:39] "GET / HTTP/1.1" 200 1308
+[06/Oct/2018 16:57:39] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 16:57:40] "GET /api/person/1/ HTTP/1.1" 404 98
+[06/Oct/2018 17:00:14] "GET / HTTP/1.1" 200 1308
+[06/Oct/2018 17:00:14] "GET /static/css/style.css HTTP/1.1" 404 1669
+Not Found: /api/person/1/
+[06/Oct/2018 17:00:16] "GET /api/person/1/ HTTP/1.1" 404 98
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2018 - 05:26:02
+Django version 2.1.2, using settings 'webresume.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f7b517f38c8>
+Traceback (most recent call last):
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ubuntu/web-app-ci-cd-with-travis-ci-Sidkhanna96/webresume/webresume/urls.py", line 22, in <module>
+    path('', include('frontend.urls')),
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ubuntu/web-app-ci-cd-with-travis-ci-Sidkhanna96/webresume/frontend/urls.py", line 8, in <module>
+    path('style.css', views.style_file),
+AttributeError: module 'frontend.views' has no attribute 'style_file'
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f337f416950>
+Traceback (most recent call last):
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/resolvers.py", line 396, in check
+    for pattern in self.url_patterns:
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ubuntu/web-app-ci-cd-with-travis-ci-Sidkhanna96/webresume/webresume/urls.py", line 22, in <module>
+    path('', include('frontend.urls')),
+  File "/home/ubuntu/a3/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ubuntu/web-app-ci-cd-with-travis-ci-Sidkhanna96/webresume/frontend/urls.py", line 2, in <module>
+    from . import views
+  File "/home/ubuntu/web-app-ci-cd-with-travis-ci-Sidkhanna96/webresume/frontend/views.py", line 1
+    lfrom django.shortcuts import render
+               ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+  File "./manage.py", line 15
+    execute_from_command_line(sys.argv)
+                                      ^
+TabError: inconsistent use of tabs and spaces in indentation

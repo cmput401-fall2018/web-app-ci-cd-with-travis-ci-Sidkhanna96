@@ -1,0 +1,37 @@
+#name {
+color:pink;
+}
+
+#contact {
+color: green;
+font-family:"Comic Sans MS"
+font-size: 20px;
+text-align: left;
+}
+
+#about {
+color:blue;
+font-family: serif;
+}
+
+#education {
+color:#556B2F;
+text-align:center;
+}
+
+#body {
+backgroud-color:#C1C9D1;
+}
+
+#skills {
+color: brown;
+text-align: right;
+}
+
+#work {
+font-family:"Times New Roman";
+}
+
+.i {
+content:url("tumblr_orri60dOSY1tndn6wo1_500.gif");
+}

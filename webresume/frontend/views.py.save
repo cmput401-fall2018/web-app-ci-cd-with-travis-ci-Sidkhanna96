@@ -18,5 +18,5 @@ image = base64.b64decode('/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAICAgICAQICAgICAgIDAw
 def image_file(request):
 	return HttpResponse(image, content_type="image/jpeg")
 
-#def style_file(request):
-	#return HttpResponse(css stuff, content_type="text/css")
+def style_file(request):
+	return HttpResponse(content_type="")
